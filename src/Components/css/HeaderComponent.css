@@ -1,0 +1,28 @@
+.header {
+  background-color: #42855b;
+  color: #ecefe5;
+  padding: 5px 10px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.header h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.header .rules-div,
+.scores {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.score-side {
+  position: relative;
+}
+
+.scores {
+  position: absolute;
+  right: 0;
+}

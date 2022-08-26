@@ -1,7 +1,14 @@
-function CardComponent() {
+import "./css/CardComponent.css";
+
+function CardComponent(props) {
   return (
-    <div className="Card">
-      <div>This is a card</div>
+    <div className="card">
+      <img
+        src={require(`../img/${props.cardData.src}`)}
+        alt={props.cardData.name}
+      />
+      <div className="card-name">{props.cardData.name}</div>
+      <div className="card-origin">{props.cardData.game}</div>
     </div>
   );
 }

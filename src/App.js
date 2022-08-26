@@ -3,7 +3,7 @@ import GameComponent from "./Components/GameComponent";
 import HeaderComponent from "./Components/HeaderComponent";
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <HeaderComponent />
       <GameComponent />
     </div>

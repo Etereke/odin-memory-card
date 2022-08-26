@@ -1,0 +1,31 @@
+.card {
+  box-sizing: border-box;
+  background-color: #d2d79f;
+  /* width: 300px; */
+  padding: 20px 0 5px;
+  text-align: center;
+  border: 3px solid #483838;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px 3px #483838;
+}
+
+.card > img {
+  width: 200px;
+  height: 254px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.card > .card-name {
+  font-size: 1.5rem;
+  margin-bottom: 2px;
+}
+
+.card > .card-origin {
+  font-size: 0.6rem;
+  font-style: italic;
+}
