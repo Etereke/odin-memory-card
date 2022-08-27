@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/odin-memory-card/static/css/main.3fc64d30.css",
+    "main.js": "/odin-memory-card/static/js/main.5059ab75.js",
+    "static/media/weiss.jpg": "/odin-memory-card/static/media/weiss.f748e82519426ca809ee.jpg",
+    "static/media/shadowlord.jpg": "/odin-memory-card/static/media/shadowlord.116244a8d97584660baa.jpg",
+    "static/media/ayla.jpg": "/odin-memory-card/static/media/ayla.91918254a4cdc53dd188.jpg",
+    "static/media/frog.jpg": "/odin-memory-card/static/media/frog.cfc8e5f819ca3294bfce.jpg",
+    "static/media/lucca.jpg": "/odin-memory-card/static/media/lucca.bcfc5a807b8f5a558e1e.jpg",
+    "static/media/crono.jpg": "/odin-memory-card/static/media/crono.bce1af253d73068a2c31.jpg",
+    "static/media/robo.jpg": "/odin-memory-card/static/media/robo.9398fa25566038c147ac.jpg",
+    "static/media/magus.jpg": "/odin-memory-card/static/media/magus.6b93a57b712a6167440e.jpg",
+    "static/media/emil.jpg": "/odin-memory-card/static/media/emil.6143e667bcb4393497ef.jpg",
+    "static/media/a2.jpg": "/odin-memory-card/static/media/a2.69ece1a34bac73a7d444.jpg",
+    "static/media/kaine.jpg": "/odin-memory-card/static/media/kaine.08aab22b4e323863ae16.jpg",
+    "static/media/velvet.jpg": "/odin-memory-card/static/media/velvet.518cfab942779f61d4dc.jpg",
+    "static/media/eleanor.jpg": "/odin-memory-card/static/media/eleanor.8bdf171db8c6b517ce30.jpg",
+    "static/media/eizen.jpg": "/odin-memory-card/static/media/eizen.a41a5cc964e2856e3a50.jpg",
+    "static/media/2b.jpg": "/odin-memory-card/static/media/2b.63b799ca7d96a8cb2e64.jpg",
+    "static/media/devola_popola.jpg": "/odin-memory-card/static/media/devola_popola.7e5b91b7e1c7bc6b75f3.jpg",
+    "static/media/rokurou.jpg": "/odin-memory-card/static/media/rokurou.d02abe3f65dda7e1c6f5.jpg",
+    "static/media/nier.jpg": "/odin-memory-card/static/media/nier.e65148b529ade37719ff.jpg",
+    "static/media/magilou.jpg": "/odin-memory-card/static/media/magilou.b3dce97f33b99c75a684.jpg",
+    "static/media/marle.jpg": "/odin-memory-card/static/media/marle.8ffcc7a703733f7cfc0e.jpg",
+    "static/media/eve.jpg": "/odin-memory-card/static/media/eve.dacbddb217d6ddbbbceb.jpg",
+    "static/media/9s.jpg": "/odin-memory-card/static/media/9s.0fb5d2a4325c454d1261.jpg",
+    "static/media/pascal.jpg": "/odin-memory-card/static/media/pascal.ad5b7d7cdc1cec081fce.jpg",
+    "static/media/adam.jpg": "/odin-memory-card/static/media/adam.e7f32be25ee1306505ae.jpg",
+    "static/media/laphicet.jpg": "/odin-memory-card/static/media/laphicet.9291125c900a45d8bf84.jpg",
+    "index.html": "/odin-memory-card/index.html",
+    "main.3fc64d30.css.map": "/odin-memory-card/static/css/main.3fc64d30.css.map",
+    "main.5059ab75.js.map": "/odin-memory-card/static/js/main.5059ab75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fc64d30.css",
+    "static/js/main.5059ab75.js"
+  ]
+}
