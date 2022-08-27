@@ -2,7 +2,7 @@ import "./css/CardComponent.css";
 
 function CardComponent(props) {
   return (
-    <div className="card">
+    <div className="card" id={props.cardData.id}>
       <img
         src={require(`../img/${props.cardData.src}`)}
         alt={props.cardData.name}

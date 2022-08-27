@@ -1,6 +1,6 @@
 import "./css/HeaderComponent.css";
 
-function HeaderComponent() {
+function HeaderComponent(props) {
   return (
     <header className="header">
       <div className="title-side">
@@ -13,8 +13,8 @@ function HeaderComponent() {
       </div>
       <div className="score-side">
         <div className="scores">
-          <div id="CurrentScore">Score: 0</div>
-          <div id="BestScore">Best: 0</div>
+          <div id="CurrentScore">Score: {props.currentScore}</div>
+          <div id="BestScore">Best: {props.bestScore}</div>
         </div>
       </div>
     </header>

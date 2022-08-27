@@ -3,7 +3,7 @@ import CardComponent from "./CardComponent";
 import { CardData } from "../classes.js";
 import React, { useState, useEffect } from "react";
 
-function GameComponent() {
+function GameComponent(props) {
   const cards = [
     new CardData("Velvet", "Tales of Berseria", "velvet.jpg", 1),
     new CardData("Rokurou", "Tales of Berseria", "rokurou.jpg", 2),
@@ -32,7 +32,10 @@ function GameComponent() {
     new CardData("Magus", "Chrono Trigger", "magus.jpg", 25),
   ];
   const [randomArray, setRandomArray] = useState(GetRandomOrder(25));
+  const [usedIdList, setUsedIdList] = useState([]);
 
+  //Returns an array with numbers from 0 to numOfCards in random order
+  //This array is used to create the CardComponents from the data in the cards[] array in randomized order
   function GetRandomOrder(numOfCards) {
     let tempArray = [];
     for (let i = 0; i < numOfCards; i++) {
@@ -51,14 +54,32 @@ function GameComponent() {
     setRandomArray(GetRandomOrder(25));
   }
 
+  //Handles the game logic: the usedIdList array stores the id-s of cards you already clicked on
+  //This function checks if the currently clicked element's id is in the array, if yes, the array and the score is reset, if no, the score is incremented and the id is added to the usedIdList array
+  function HandleScore(e) {
+    if (usedIdList.includes(e.currentTarget.id)) {
+      setUsedIdList([]);
+      props.ResetScore();
+    } else {
+      const tempArray = [].concat(usedIdList).concat(e.currentTarget.id);
+      setUsedIdList(tempArray);
+      props.IncrementScore();
+    }
+  }
+
+  function HandleClick(e) {
+    RandomizeOrder();
+    HandleScore(e);
+  }
+
   useEffect(() => {
     [...document.querySelectorAll(".card")].forEach((card) => {
-      document.addEventListener("click", RandomizeOrder);
+      card.addEventListener("click", HandleClick);
     });
 
     return () => {
       [...document.querySelectorAll(".card")].forEach((card) => {
-        document.removeEventListener("click", RandomizeOrder);
+        card.removeEventListener("click", HandleClick);
       });
     };
   });
@@ -68,32 +89,6 @@ function GameComponent() {
       {randomArray.map((idx) => {
         return <CardComponent key={cards[idx].id} cardData={cards[idx]} />;
       })}
-
-      {/* <CardComponent cardData={cards[0]} />
-      <CardComponent cardData={cards[1]} />
-      <CardComponent cardData={cards[2]} />
-      <CardComponent cardData={cards[3]} />
-      <CardComponent cardData={cards[4]} />
-      <CardComponent cardData={cards[5]} />
-      <CardComponent cardData={cards[6]} />
-      <CardComponent cardData={cards[7]} />
-      <CardComponent cardData={cards[8]} />
-      <CardComponent cardData={cards[9]} />
-      <CardComponent cardData={cards[10]} />
-      <CardComponent cardData={cards[11]} />
-      <CardComponent cardData={cards[12]} />
-      <CardComponent cardData={cards[13]} />
-      <CardComponent cardData={cards[14]} />
-      <CardComponent cardData={cards[15]} />
-      <CardComponent cardData={cards[16]} />
-      <CardComponent cardData={cards[17]} />
-      <CardComponent cardData={cards[18]} />
-      <CardComponent cardData={cards[19]} />
-      <CardComponent cardData={cards[20]} />
-      <CardComponent cardData={cards[21]} />
-      <CardComponent cardData={cards[22]} />
-      <CardComponent cardData={cards[23]} />
-      <CardComponent cardData={cards[24]} /> */}
     </div>
   );
 }
